@@ -1,0 +1,21 @@
+Actors:
+Recepcionist
+Manager
+Stock Controller
+Customer
+Mechanic
+
+Use Cases:
+Enter customer choices-Recepcionist
+Enter Customer Details-Recepcionist
+Make Payment-Customer Extends Cancel Order-Manager
+Order Components-Manager/Stock Controller
+Build bike-Mechanic includes test bike-Mechanic
+Record Deliveries-Stock Controller
+Print Orders-Mechanic
+Record Completed Orders-Mechanic includes Contact Customers-Recepcionist
+Generate report-Recepcionist/Stock Controller
+Enter Employee Details-Manager
+
+ADITIONAL INFO:
+The store manager is able to carry out all of the functions that the receptionist can as well as being able to remove, add and update components in the system.
