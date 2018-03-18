@@ -1,0 +1,16 @@
+﻿<Window x:Class="SoftwareEngineeringCoursework.FinishedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoftwareEngineeringCoursework"
+        mc:Ignorable="d"
+        Title="FinishedWindow" Height="181.513" Width="300">
+    <Grid>
+        <Label Content="Bike Cost:" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="50$" HorizontalAlignment="Left" Margin="87,21,0,0" VerticalAlignment="Top" Width="124"/>
+        <Button Content="Add More Bikes" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click"/>
+        <Button Content="Finish" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="272"/>
+
+    </Grid>
+</Window>
