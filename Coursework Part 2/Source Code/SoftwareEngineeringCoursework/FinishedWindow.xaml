@@ -8,9 +8,9 @@
         Title="FinishedWindow" Height="181.513" Width="300">
     <Grid>
         <Label Content="Bike Cost:" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top" Width="86"/>
-        <Label Content="50$" HorizontalAlignment="Left" Margin="87,21,0,0" VerticalAlignment="Top" Width="124"/>
-        <Button Content="Add More Bikes" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="272" Click="Button_Click"/>
-        <Button Content="Finish" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label x:Name="bikeCostLbl" Content="" HorizontalAlignment="Left" Margin="87,21,0,0" VerticalAlignment="Top" Width="124"/>
+        <Button x:Name="addMoreBikesBtn" Content="Add More Bikes" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="272" Click="addMoreBikesBtn_Click"/>
+        <Button x:Name="finishBtn" Content="Finish" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="272" Click="finishBtn_Click"/>
 
     </Grid>
 </Window>

@@ -9,10 +9,10 @@
     <Grid>
         <Label Content="Completion Time" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
         <Label Content="Total Cost" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
-        <Label Content="52 H" HorizontalAlignment="Left" Margin="133,55,0,0" VerticalAlignment="Top"/>
-        <Label Content="200$" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top"/>
-        <Button Content="Enter Customer Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,100,0,0"/>
-        <Button Content="Cancel Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,136,0,0"/>
+        <Label x:Name="completionTimeLbl" Content="" HorizontalAlignment="Left" Margin="133,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalCostLbl" Content="" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="customerDetailsBtn" Content="Enter Customer Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,100,0,0" Click="customerDetailsBtn_Click"/>
+        <Button x:Name="cancelOrderBtn" Content="Cancel Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" Margin="10,136,0,0" Click="cancelOrderBtn_Click"/>
 
     </Grid>
 </Window>

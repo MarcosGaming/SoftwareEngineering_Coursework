@@ -15,3 +15,12 @@ C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source 
 C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
 C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.dll
 C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.pdb
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\bin\Debug\netstandard2.0\Business.deps.json
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\bin\Debug\netstandard2.0\Business.dll
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\bin\Debug\netstandard2.0\Business.pdb
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.csprojResolveAssemblyReference.cache
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.dll
+C:\Users\40284094\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\Business\obj\Debug\netstandard2.0\Business.pdb

@@ -76,15 +76,43 @@ namespace UnitTesting
             Assert.AreEqual(32*3, facade.getTotalCompletionTime(), "Facade get total completion time method not implemented correctly");
         }
         [TestMethod]
+        public void testGetBikeCost()
+        {
+            //arrange
+            FacadeManagement facade = FacadeManagement.getInstance();
+            Bike bike1 = new Bike();
+            bike1.Frame.FrameColour = "Blue";
+            bike1.Frame.FrameSize = "Small";
+            bike1.GroupSet.Gears = "Thumb Shifter";
+            bike1.GroupSet.Brakes = "Disk Brakes";
+            bike1.Wheels.WheelsType = "Mountain";
+            bike1.FinishingSet.HandleBars = "Riser Bars";
+            bike1.FinishingSet.Saddle = "Forward";
+            //act (Values are taken from the stock class)
+            int bikeCost = facade.getBikeCost(bike1);
+            int cost = 100 + 30 + 40 + 100 + 150 + 20 + 50;
+            //assert
+            Assert.AreEqual(cost, bikeCost, "Facade get bike cost method not implemented correctly");
+        }
+        [TestMethod]
         public void testGetTotalBikesCost()
         {
             //arrange
             FacadeManagement facade = FacadeManagement.getInstance();
             //act (Values are taken from the stock class, the three bikes added have the same components)
-            int totalCost = 100*3 + 30*3 + 3 *40 + 100*3 + 150*3 + 20 *3 + 50 *3;
+            int totalCost = 100 * 3 + 30 * 3 + 3 * 40 + 100 * 3 + 150 * 3 + 20 * 3 + 50 * 3;
             //assert (There are already three bikes added so the test is performed with those three bikes)
             Assert.AreEqual(totalCost, facade.getTotalBikesCost(), "Facade get total bikes cost method not implemented correctly");
         }
-
+        [TestMethod]
+        public void testClearBikeListMethod()
+        {
+            //arrange
+            FacadeManagement facade = FacadeManagement.getInstance();
+            //act
+            facade.clearBikeList();
+            //assert (If the bike list is empty the bike cost is 0)
+            Assert.AreEqual(0, facade.getTotalBikesCost(), "Facade clear bike method do not implemented correctly");
+        }
     }
 }

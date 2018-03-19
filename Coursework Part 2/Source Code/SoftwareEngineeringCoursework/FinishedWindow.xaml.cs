@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Business;
+using Data;
 
 namespace SoftwareEngineeringCoursework
 {
@@ -19,14 +21,35 @@ namespace SoftwareEngineeringCoursework
     /// </summary>
     public partial class FinishedWindow : Window
     {
-        public FinishedWindow()
+        FacadeManagement facade = FacadeManagement.getInstance();
+        //Bike built in last window
+        Bike newBike;
+
+        public FinishedWindow(Bike bike)
         {
             InitializeComponent();
+            newBike = bike;
+            facade.addBike(newBike);
+            displayBikeCost();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void addMoreBikesBtn_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow window = new MainWindow();
+            window.Show();
+            this.Close();
+        }
+        private void finishBtn_Click(object sender, RoutedEventArgs e)
+        {
+            TotalCostWindow window = new TotalCostWindow();
+            window.Show();
+            this.Close();
+        }
 
+        //Display the bike cost
+        private void displayBikeCost()
+        {
+            bikeCostLbl.Content = facade.getBikeCost(newBike).ToString();
         }
     }
 }

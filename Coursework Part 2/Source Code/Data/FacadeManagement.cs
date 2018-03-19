@@ -85,7 +85,7 @@ namespace Data
                 {
                     everythingAvailable = false;
                 }
-                if (_stock.getGearsStock()[b.GroupSet.Gears] >= 0)
+                if (_stock.getGearsStock()[b.GroupSet.Gears] > 0)
                 {
                     _stock.getGearsStock()[b.GroupSet.Gears] -= 1;
                 }
@@ -93,7 +93,7 @@ namespace Data
                 {
                     everythingAvailable = false;
                 }
-                if (_stock.getBrakesStock()[b.GroupSet.Brakes] >= 0)
+                if (_stock.getBrakesStock()[b.GroupSet.Brakes] > 0)
                 {
                     _stock.getBrakesStock()[b.GroupSet.Brakes] -= 1;
                 }
@@ -101,7 +101,7 @@ namespace Data
                 {
                     everythingAvailable = false;
                 }
-                if (_stock.getWheelsStock()[b.Wheels.WheelsType] >= 0)
+                if (_stock.getWheelsStock()[b.Wheels.WheelsType] > 0)
                 {
                     _stock.getWheelsStock()[b.Wheels.WheelsType] -= 1;
                 }
@@ -109,7 +109,7 @@ namespace Data
                 {
                     everythingAvailable = false;
                 }
-                if (_stock.getHandlebarsStock()[b.FinishingSet.HandleBars] >= 0)
+                if (_stock.getHandlebarsStock()[b.FinishingSet.HandleBars] > 0)
                 {
                     _stock.getHandlebarsStock()[b.FinishingSet.HandleBars] -= 1;
                 }
@@ -117,7 +117,7 @@ namespace Data
                 {
                     everythingAvailable = false;
                 }
-                if (_stock.getSaddleStock()[b.FinishingSet.Saddle] >= 0)
+                if (_stock.getSaddleStock()[b.FinishingSet.Saddle] > 0)
                 {
                     _stock.getSaddleStock()[b.FinishingSet.Saddle] -= 1;
                 }
@@ -146,10 +146,22 @@ namespace Data
             int totalCost = 0;
             foreach(Bike b in _bikeList)
             {
-                totalCost += calculateComponentsCost(b);
-                totalCost += calculateBuildingTestingCost();
+                totalCost += getBikeCost(b);
             }
             return totalCost;
+        }
+        //Calculate bike cost
+        public int getBikeCost(Bike bike)
+        {
+            int cost = 0;
+            cost += calculateBuildingTestingCost();
+            cost += calculateComponentsCost(bike);
+            return cost;
+        }
+        //Clear bike list
+        public void clearBikeList()
+        {
+            _bikeList.Clear();
         }
     }
 }
