@@ -1,0 +1,6 @@
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\bin\Debug\UserInterfaceTesting.dll
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\bin\Debug\UserInterfaceTesting.pdb
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\obj\Debug\UserInterfaceTesting.csprojResolveAssemblyReference.cache
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\obj\Debug\UserInterfaceTesting.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\obj\Debug\UserInterfaceTesting.dll
+C:\Users\Marcos\Desktop\SoftwareEngineering_Coursework\Coursework Part 2\Source Code\UserInterfaceTesting\obj\Debug\UserInterfaceTesting.pdb
